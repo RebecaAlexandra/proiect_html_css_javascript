@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
+    <title>Contacteaza-ma</title>
+</head>
+<body>
+    <div id="navigation">
+		<ul id="menu">
+			<li><a href="index.html">Acasa</a></li>
+            <li><a href="highscores.html">High Scores</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		</div>
+    <h1>Contacteaza-ma</h1>
+    <form name="myForm" action="submit.php" onsubmit="return validateForm()" method="post">
+        <table class="form-style">
+            <tr>
+                <td>
+                    <label>
+                        Numele Intreg <span class="required">*</span>
+                    </label>
+                </td>
+                <td>
+                    <input type="text" name="name" class="long"/>
+                    <span class="error" id="errorname"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Adresa ta de email <span class="required">*</span>
+                    </label>
+                </td>
+                <td>
+                    <input type="email" name="email" class="long"/>
+                    <span class="error" id="erroremail"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Mesaj <span class="required">*</span>
+                    </label>
+                </td>
+                <td>
+                    <textarea name="message" class="long field-textarea"></textarea>
+                    <span class="error" id="errormsg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Trimite">      
+                    <input type="reset" value="Reseteaza"> 
+                </td>
+                <td>
+                    <div class="social">
+                        <a href="https://www.facebook.com/friends.tv/" >
+                            <img src="images/facebook.png" alt="Facebook" width="20px" height="20px">
+                        </a>
+                        <a href="https://www.instagram.com/friends/">
+                            <img src="images/instagram.png" alt="Instagram" width="20px" height="20px">
+                        </a>
+                   </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
